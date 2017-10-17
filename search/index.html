@@ -18,7 +18,7 @@
         https://github.com/Halyul/hexo-theme-mdui
         Version: 1.5.1 -->
   <meta charset="UTF-8">
-  <title>2017 - Hexo</title>
+  <title>Search something... - Hexo</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -55,7 +55,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://yoursite.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="2017 - Hexo | Hexo">
+  <meta property="og:title" content="Search something... - Hexo | Hexo">
   <meta property="og:image" content="/img/favicon.png" />
   
 
@@ -105,9 +105,7 @@
   
     mdui-appbar-with-toolbar
   
-  
-    side-content style-fix
-  " onresize="styleChanging()">
+  " >
 
 
   
@@ -118,38 +116,8 @@
 
   
 
-    <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed" id="blog-appbar">
-      <div class="mdui-toolbar mdui-color-theme mdui-shadow-2">
-        <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
-          <i class="mdui-icon">
-            <span></span>
-          </i>
-        </button>
-        
-          <a href="/" class="mdui-typo-headline">
-            Title
-          </a>
-          <span class="appbar-border-line mdui-hidden-xs"></span>
-        
-        
-          <span class="mdui-typo-title mdui-hidden-xs"
-            
-              onclick="smoothScroll.animateScroll( 0 );"
-            
-          >
-            2017
-          </span>
-        
-        
-        
-          <div class="flex-spacer"></div>
-        
-        
-        
 
-      </div>
-    </div>
-  
+  <div id="search-cover" searchResult onclick="closeSearch()"></div>
 
 
 
@@ -158,8 +126,6 @@
 
   
   <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close
-  
-    drawer-fix
   " id="drawer" style="z-index: 2001;">
   <div class="userview" style="background-image: url(/img/bg.png)">
   <div class="overlay">
@@ -210,7 +176,7 @@
       <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
         
         
-        <div class="mdui-collapse-item mdui-collapse-item-open">
+        <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
             <div class="mdui-list-item-content">Years</div>
@@ -268,94 +234,25 @@
 
 
 
-  
-
-  <style id="side_content_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("side_content_css","/css/src/now/side_content.min.css?6QUsjVbcFbaNw1GxvnmHrA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-
-<div id="side-content" class="mdui-color-orange animate-drawer">
-  <div class="mdui-grid-tile" style="overflow: visible;">
-    <div class="bg">
-      <img src="/img/random/picHD_17.png" />
-    </div>
-    <div class="mdui-grid-tile-actions mdui-grid-tile-actions-top mdui-grid-tile-actions-gradient">
-      <div class="flex-spacer"></div>
-      <div class="mdui-grid-tile-buttons">
-        
-
-      </div>
-    </div>
-  </div>
-  <div class="content">
-    <img class="mdui-img-circle avatar" src="/img/avatar.jpg"/>
-    <div class="author mdui-text-center">
-      Janking
-    </div>
-    <div class="name">
-      2017
-    </div>
-    <div class="length">
-      
-      1Post
-    </div>
-  </div>
-</div>
-<div id="contentLocation"></div>
-
-
 
 <main>
-  
+  <style id="search_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("search_css","/css/src/plus/search.min.css?PsMrsW7mtwLjgUsSFl0MAw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+<style id="index_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("index_css","/css/src/plus/index.min.css?WYKJSRDQmvHqC3U1Wgs23g==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+<div id="search">
   <div class="posts-container column-3">
 
   </div>
-  <div id="content-list" class="animate-post">
-    
-      <div class="content-item">
-        
-  
-<div class="mdui-card card-bottom-fix mdui-hoverable">
-  <div class="mdui-card-header posts-header">
-    <img class="mdui-card-header-avatar" src="/img/avatar.jpg"/>
-    <div class="content mdui-valign">
-      <div class="mdui-typo-body-1-opacity mdui-typo">
-        <span>Janking</span>
-        <span> · </span>
-        <span>Oct 17, 2017</span>
-      </div>
-    </div>
-  <div class="flex-spacer"></div>
-    <a href="/2017/10/17/learning-susy/" target="_self" class="mdui-btn mdui-btn-icon mdui-ripple btn-dense"><i class="mdui-icon material-icons">&#xe89e;</i></a>
+
+  <div id="content-list" searchResult>
+
   </div>
-  <div class="mdui-card-content posts-content">
-    <div class="posts-excerpt">
-      <a href="/2017/10/17/learning-susy/" target="_self" class="posts-title mdui-typo-title no-text-decoration">
-        
-        Susy 2 教程 — 入门篇
-      </a>
-      <div class="posts-strip mdui-typo-body-1">
-        
-      </div>
+
+  <div class="footer">
+    <div class="mdui-text-center mdui-text-color-theme-text">
+      It looks like you&#39;ve reached the end.
     </div>
-    <div class="flex-spacer"></div>
-    
-      <div class="posts-thumbnail" style="background-image: url(/img/random/picHD_7.png)"></div>
-    
   </div>
-  
 </div>
-
-
-
-      </div>
-    
-  </div>
-  
-
-
-<button id="toTop" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-fab-hide" style="z-index: 9;" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
 
 </main>
 
@@ -401,12 +298,6 @@
 
 
 
-  <script>
-    window.addEventListener("scroll", function(){
-       document.querySelector('#archives .bg .mdui-img-fluid.mdui-img-rounded')
-        .style.transform = 'translateY(' + document.body.scrollTop * 0.4 + 'px)';
-    })
-  </script>
 
 
 
@@ -414,65 +305,7 @@
 
 
 
-  <script type="text/ls-javascript" id="style-changing-script">
-  var content_flag = false;
-  var appbar = document.querySelector('div#blog-appbar')
-  var body = document.querySelector('body')
 
-  window.addEventListener('scroll', function() {
-    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    var divTop = document.querySelector('div#contentLocation').offsetTop
-    var contentLocation = divTop - scrollTop - 56;
-
-    if (!content_flag && contentLocation < 0 && window.innerWidth < 860) {
-      appbar.classList.add('style-fix');
-      body.classList.remove('style-fix');
-      content_flag = true;
-    } else if (content_flag && contentLocation >= 0 && window.innerWidth < 860) {
-      appbar.classList.remove('style-fix');
-      body.classList.add('style-fix');
-      content_flag = false;
-    };
-  })
-
-  function styleChanging() {
-    var hide = new mdui.Headroom('div#blog-appbar');
-    var windowWidth = window.innerWidth,
-      toLeftWidth = 860;
-    if (windowWidth < toLeftWidth) {
-      hide.enable();
-    } else {
-      hide.disable();
-    }
-  };
-  styleChanging();
-</script>
-
-
-
-
-
-
-  <script type="text/ls-javascript" id="to-top-script">
-  /* fab */
-  (function() {
-    var pageFlag = false;
-    var fab = new mdui.Fab('#toTop');
-    fab.hide();
-    window.addEventListener('scroll', function() {
-      var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      var divTop = document.querySelector('div#top').offsetTop
-      var pageLocation = divTop - bodyTop;
-      if (!pageFlag && pageLocation < 0) {
-        fab.show();
-        pageFlag = true;
-      } else if (pageFlag && pageLocation >= 0) {
-        fab.hide();
-        pageFlag = false;
-      }
-    });
-  })();
-</script>
 
 
 

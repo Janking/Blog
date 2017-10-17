@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+<html  style="display: none;">
+
+  
+<head>
+  <script>
+    window.mduiVersion = "1.5.1"
+    window.oldVersion = [
+     '1.5.0',
+     '1.4.8',
+     '1.4.9',
+     'unknownVersion'
+    ]
+  </script>
+  <!--
+        © HEXO MDUI Theme
+        https://github.com/Halyul/hexo-theme-mdui
+        Version: 1.5.1 -->
+  <meta charset="UTF-8">
+  <title>Susy 2 教程 — 入门篇 - Hexo</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+  <link rel="icon" sizes="192x192" href="/img/favicon.png">
+  <link rel="apple-touch-icon" href="/img/favicon.png">
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  
+    <meta name="theme-color" content="
+  
+  #3F51B5
+  
+
+">
+  
+
+  <meta name="author" content="Janking">
+  
+  <meta name="keywords" content="blog, hexo, mdui">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="Hexo">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="http://yoursite.com">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="Susy 2 教程 — 入门篇 - Hexo | Hexo">
+  <meta property="og:image" content="/img/favicon.png" />
+  
+
+    
+
+  <!-- Cache -->
+  <meta http-equiv="Cache-Control" content="max-age=7200" />
+  <meta http-equiv="Expires" content="Fri, 29 Dec 2017 23:00:00 GMT" />
+
+  
+
+  <script>
+    (function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.mduiVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf(c)!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();
+  </script>
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/fonts.min.css">
+  
+  
+    
+      <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style-now.min.css?Q3IlX8SDWal9tefi13UmFw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    
+  
+
+  <!-- Custom Head -->
+  
+
+  
+    <style>
+      body {
+        background-color: #eeeeee;
+      }
+    </style>
+  
+
+  
+</head>
+
+
+
+
+  
+    
+  <body class="mdui-theme-primary-indigo mdui-theme-accent-blue
+   
+  
+    mdui-appbar-with-toolbar
+  
+  " >
+
+
+  
+
+
+<div id="top"></div>
+
+
+  
+
+  <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed animate-appbar" id="blog-appbar">
+    <div class="mdui-toolbar mdui-color-theme">
+      <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </button>
+      
+        <a href="/" class="mdui-typo-headline">
+          Title
+        </a>
+      
+      
+      
+        <div class="flex-spacer"></div>
+      
+      
+      
+
+    </div>
+  </div>
+
+
+  <div id="search-cover" searchResult onclick="closeSearch()"></div>
+
+
+
+
+
+
+  
+  <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close
+  " id="drawer" style="z-index: 2001;">
+  <div class="userview" style="background-image: url(/img/bg.png)">
+  <div class="overlay">
+    <img class="mdui-img-circle avatar" src="/img/avatar.jpg"/>
+    <div class="bottom">
+      <div class="info">
+        <div class="author mdui-text-color-white-text">
+          Janking
+        </div>
+        <div class="slogan mdui-text-color-white-secondary">
+          其疾如风，其徐如林，侵掠如火，不动如山。
+        </div>
+      </div>
+      <div class="flex-spacer"></div>
+      
+    </div>
+  </div>
+</div>
+
+  <div class="content">
+  <div class="hexo">
+    
+      <div class="mdui-list no-padding-bottom">
+        <a href="/">
+          <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+            <div class="mdui-list-item-content">
+              Index
+            </div>
+          </li>
+        </a>
+      </div>
+    
+    
+      <div class="mdui-list no-padding">
+        <a href="/archives">
+          <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+            <div class="mdui-list-item-content">
+              Archives
+              <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+            </div>
+          </li>
+        </a>
+      </div>
+    
+    
+      <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
+        
+        
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+            <div class="mdui-list-item-content">Years</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+            
+              <a href="/archives/2017/" class="mdui-list-item mdui-ripple">
+                2017
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  
+</div>
+
+  <div class="flex-spacer"></div>
+  <div class="drawer-footer">
+  <div class="mdui-typo mdui-typo-caption-opacity">
+    Powered by <a href="http://hexo.io">Hexo</a>
+    <br />
+    Theme - <a href="//github.com/Halyul/hexo-theme-mdui">Halyul/MDUI</a>
+    <br />
+    <span>
+      Copyright ©
+      <span year></span>
+      Janking
+    </span>
+    
+    
+      <br />
+      <span>
+        Last updated: Oct 17, 2017
+      </span>
+    
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var copyrightNow = new Date().getFullYear();
+  var textContent = document.querySelector('span[year]')
+  
+    textContent.textContent = copyrightNow
+  
+</script>
+
+</div>
+
+
+
+
+
+
+
+<main>
+  
+
+
+  <style id="post_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("post_css","/css/src/now/post.min.css?KOjsR44UOPA/MXBwzxrPUg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+<style id="lightgallery_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("lightgallery_css","/css/src/lightgallery.min.css?k96yraexoRn3+CTmPycWNA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+<style>
+  .lg-outer .lg-item {
+    background-image: url("/img/loading.gif");
+  }
+</style>
+<div class="post-warpper animate-post">
+  <div class="post-bg-color
+    
+      
+        mdui-color-theme
+      
+    
+  "></div>
+  <div class="post-header
+    
+      
+        mdui-color-theme
+      
+    
+  ">
+    <div class="post-header-container">
+      <div class="post-title mdui-text-truncate">Susy 2 教程 — 入门篇</div>
+      <div class="post-actions mdui-valign">
+        <div>
+          <span>Posted: </span>
+          <span style="float: right">Oct 17, 2017</span>
+          
+        </div>
+        
+
+        
+
+      </div>
+    </div>
+  </div>
+  <div class="post-container flex-spacer
+  
+  ">
+    <div class="post-adjust">
+      <div class="mdui-card card-bottom-fix menu-fix mdui-hoverable" id="blog-post">
+        <div class="warning">
+          This article was last modified
+          <span id="content-warning"></span>
+          days ago.
+          The content of this post may be outdated!
+        </div>
+        
+        
+          <div class="mdui-card-media">
+            <img src="/img/random/picHD_30.png"/>
+          </div>
+        
+        <div class="post-content mdui-typo no-margin" id="post-content">
+          <p><img src="http://images.vrm.cn/2017/06/12/161558_c56d152a_104617.png" alt=""></p>
+<h2 id="关于Susy"><a href="#关于Susy" class="headerlink" title="关于Susy"></a>关于Susy</h2><p>Susy 是一款进行<strong>栅格布局</strong>的辅助工具，它让开发者摆脱了冗杂的数学计算，同时降低了样式与结构的耦合程度。它的能力正如官网的简介一样强大：</p>
+<blockquote>
+<p>Your markup, your design, your opinions, out math.</p>
+</blockquote>
+<h2 id="栅格布局"><a href="#栅格布局" class="headerlink" title="栅格布局"></a>栅格布局</h2><p>栅格设计的特点是重视比例、秩序、连续感和现代感。 以及对存在于版面上的元素进行规划、组合、保持平衡或者打破平衡，以便让信息可以更快速、更便捷、更系统和更有效率的读取；另外最重要的一点是，负空间的规划（即：留白）也是栅格系统设计当中非常重要的部分。—— <strong>维基百科</strong></p>
+<blockquote>
+<p>参考文献：<a href="http://sagashen.lofter.com/post/11545c_785887" target="_blank" rel="external">http://sagashen.lofter.com/post/11545c_785887</a></p>
+</blockquote>
+<h2 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h2><p>Susy 是基于 Sass 开发的，严格上讲并不是一个框架，而是类库，起初，它的设计初衷是作为 Compass 平台的一部分。建议大家在 Compass 的环境下使用 Susy。</p>
+<blockquote>
+<p>Susy 并非一定要基于 Compass，它还支持 Webpack，Gulp，Grunt等自动化工具编译，详细可以查看<a href="http://susydocs.oddbird.net/en/latest/install/#webpack-and-npm" target="_blank" rel="external">官网文档</a></p>
+</blockquote>
+<figure class="highlight shell"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span>终端指令</div><div class="line">gem install susy</div><div class="line"></div><div class="line"><span class="meta">#</span>如果已有compass项目</div><div class="line">compass install susy</div><div class="line"></div><div class="line"><span class="meta">#</span>如果是新初始化compass项目</div><div class="line">compass create --using susy &lt;project name&gt;</div></pre></td></tr></table></div></figure>
+<p>默认你项目的 <code>项目名/sass/</code> 文件夹下会生成一个 <code>_grids.scss</code> 文件</p>
+<p><img src="http://images.vrm.cn/2017/06/12/161637_3347f58a_104617.png" alt="输入图片说明"></p>
+<p>打开 <code>_grids.scss</code> 文件，已经引入了 <code>susy</code></p>
+<figure class="highlight css"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// Requirements</div><div class="line">// ============</div><div class="line"></div><div class="line">@<span class="keyword">import</span> <span class="string">"susy"</span>;</div><div class="line"></div><div class="line">$susy: (</div><div class="line">  <span class="selector-tag">columns</span>: 12,</div><div class="line">  gutters: 1/4,</div><div class="line">);</div></pre></td></tr></table></div></figure>
+<h2 id="小试牛刀"><a href="#小试牛刀" class="headerlink" title="小试牛刀"></a>小试牛刀</h2><figure class="highlight css"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">// sass</div><div class="line">$susy: (</div><div class="line">  <span class="selector-tag">container</span><span class="selector-pseudo">:960px</span>,</div><div class="line">  columns: 12,  // The number of columns in your grid</div><div class="line">  gutters: 1/4, // The size of a gutter in relation to a single column</div><div class="line">);</div><div class="line"></div><div class="line"><span class="selector-class">.container</span>&#123;</div><div class="line">	@include container;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.sidebar</span>&#123;</div><div class="line">	@include span(2);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.main</span>&#123;</div><div class="line">	@include span(10)</div><div class="line">&#125;</div></pre></td></tr></table></div></figure>
+<figure class="highlight css"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">// output</div><div class="line"><span class="selector-class">.container</span> &#123;</div><div class="line">  <span class="attribute">max-width</span>: <span class="number">960px</span>;</div><div class="line">  <span class="attribute">margin-left</span>: auto;</div><div class="line">  <span class="attribute">margin-right</span>: auto;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.container</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">  <span class="attribute">content</span>: <span class="string">" "</span>;</div><div class="line">  <span class="attribute">display</span>: block;</div><div class="line">  <span class="attribute">clear</span>: both;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.sidebar</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">15.25424%</span>;</div><div class="line">  <span class="attribute">float</span>: left;</div><div class="line">  <span class="attribute">margin-right</span>: <span class="number">1.69492%</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.main</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">83.05085%</span>;</div><div class="line">  <span class="attribute">float</span>: left;</div><div class="line">  <span class="attribute">margin-right</span>: <span class="number">1.69492%</span>;</div><div class="line">&#125;</div></pre></td></tr></table></div></figure>
+<h2 id="专业词释义"><a href="#专业词释义" class="headerlink" title="专业词释义"></a>专业词释义</h2><h4 id="isolate-布局"><a href="#isolate-布局" class="headerlink" title="isolate 布局"></a>isolate 布局</h4><blockquote>
+<p>针对不同浏览器对小数点的四舍五入处理修正，如图：</p>
+</blockquote>
+<p><img src="http://images.vrm.cn/2017/06/12/161704_0d77196c_104617.png" alt="输入图片说明"></p>
+<h4 id="gutter-row-container"><a href="#gutter-row-container" class="headerlink" title="gutter , row , container"></a>gutter , row , container</h4><blockquote>
+<p>沟，行，全局</p>
+</blockquote>
+<p><img src="http://images.vrm.cn/2017/06/12/161713_983f0dce_104617.png" alt="输入图片说明"></p>
+<h2 id="设置篇"><a href="#设置篇" class="headerlink" title="设置篇"></a>设置篇</h2><h3 id="默认配置"><a href="#默认配置" class="headerlink" title="默认配置"></a>默认配置</h3><p><code>$susy</code> 是 Susy载入后自动读取的一个全局配置变量。</p>
+<figure class="highlight css"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line">$susy: (</div><div class="line">  // 从左至右</div><div class="line">  <span class="selector-tag">flow</span>: <span class="selector-tag">ltr</span>,</div><div class="line">  // 可选值： fluid | static , 网格的计算单位，fluid是百分号%，static是作用域的倍数em					</div><div class="line">  <span class="selector-tag">math</span>: <span class="selector-tag">fluid</span>,					   </div><div class="line">  // 可选值： float | isolate, float是浮动形式，不解释，isolate是一种百分比溢出的修复.</div><div class="line">  // 详细看http://tylertate.com/blog/2012/01/05/subpixel-rounding.html</div><div class="line">  <span class="selector-tag">output</span>: <span class="selector-tag">float</span>,</div><div class="line">  // 可选值：before | after | split | inside | inside-static , </div><div class="line">  // before,after对应margin-right,margin-left,</div><div class="line">  // split是padding-left&amp;padding-right,</div><div class="line">  // inside-static也是padding,但是单位是px,                    </div><div class="line">  <span class="selector-tag">gutter-position</span>: <span class="selector-tag">after</span>,      </div><div class="line">  // 可选值： &lt;length&gt; | auto , 总区域宽度，auto则以父元素的宽度为值     </div><div class="line">  <span class="selector-tag">container</span>: <span class="selector-tag">auto</span>,                  </div><div class="line">  // 可选值： left | center | right | &lt;length&gt; [*2]，总区域的水平对齐方式</div><div class="line">  <span class="selector-tag">container-position</span>: <span class="selector-tag">center</span>,		</div><div class="line">  // 列数</div><div class="line">  <span class="selector-tag">columns</span>: 4,						</div><div class="line">  // 沟值</div><div class="line">  <span class="selector-tag">gutters</span>: <span class="selector-class">.25</span>,						</div><div class="line">  // 可选值：&lt;length&gt; | false/null ，设定每列宽度，这个比较鸡肋，绝大部分情况下不用设置，除非需求奇葩。</div><div class="line">  <span class="selector-tag">column-width</span>: <span class="selector-tag">false</span>,				</div><div class="line">  // 可选值：border-box | content-box</div><div class="line">  <span class="selector-tag">global-box-sizing</span>: <span class="selector-tag">content-box</span>,	</div><div class="line">  // 可选值：from | to ,建议不要改这个值，当你改成from的时候，last方法将不起作用</div><div class="line">  <span class="selector-tag">last-flow</span>: <span class="selector-tag">to</span>,					</div><div class="line">  // debug，通过gradient制作的背景grid条，很棒的debug工具</div><div class="line">  <span class="selector-tag">debug</span>: (							</div><div class="line">    <span class="selector-tag">image</span>: <span class="selector-tag">hide</span>,</div><div class="line">    <span class="selector-tag">color</span>: <span class="selector-tag">rgba</span>(<span class="selector-id">#66f</span>, <span class="selector-class">.25</span>),</div><div class="line">    <span class="selector-tag">output</span>: <span class="selector-tag">background</span>,</div><div class="line">    <span class="selector-tag">toggle</span>: <span class="selector-tag">top</span> <span class="selector-tag">right</span>,</div><div class="line">  ),</div><div class="line">  // 自定义 mixins</div><div class="line">  <span class="selector-tag">use-custom</span>: (                     </div><div class="line">    <span class="selector-tag">background-image</span>: <span class="selector-tag">true</span>,</div><div class="line">    <span class="selector-tag">background-options</span>: <span class="selector-tag">false</span>,</div><div class="line">    <span class="selector-tag">box-sizing</span>: <span class="selector-tag">true</span>,</div><div class="line">    <span class="selector-tag">clearfix</span>: <span class="selector-tag">false</span>,</div><div class="line">    <span class="selector-tag">rem</span>: <span class="selector-tag">true</span>,</div><div class="line">  )</div><div class="line">);</div></pre></td></tr></table></div></figure>
+<h3 id="Layout-function-mixin"><a href="#Layout-function-mixin" class="headerlink" title="Layout [function/mixin]"></a>Layout [function/mixin]</h3><p>可以转换map配置，有<code>mixin</code>和<code>function</code>两种用法：</p>
+<h4 id="function用法"><a href="#function用法" class="headerlink" title="function用法"></a><code>function</code>用法</h4><ul>
+<li>Format:    layout($layout)</li>
+<li>$layout:<code>&lt;layout&gt;</code></li>
+</ul>
+<figure class="highlight css"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">// input</div><div class="line">$map: layout(auto 12 .25 inside fluid isolate);</div><div class="line"></div><div class="line">// 终端打印一下</div><div class="line">@<span class="keyword">debug</span> $map;</div><div class="line"></div><div class="line">//output</div><div class="line">$map: (</div><div class="line">  <span class="selector-tag">container</span>: <span class="selector-tag">auto</span>,</div><div class="line">  <span class="selector-tag">columns</span>: 12,</div><div class="line">  <span class="selector-tag">gutters</span>: <span class="selector-class">.25</span>,</div><div class="line">  <span class="selector-tag">gutter-position</span>: <span class="selector-tag">inside</span>,</div><div class="line">  <span class="selector-tag">math</span>: <span class="selector-tag">fluid</span>,</div><div class="line">  <span class="selector-tag">output</span>: <span class="selector-tag">isolate</span>,</div><div class="line">);</div></pre></td></tr></table></div></figure>
+<h4 id="mixin用法"><a href="#mixin用法" class="headerlink" title="mixin用法"></a><code>mixin</code>用法</h4><ul>
+<li>Format:    layout($layout, $clean)</li>
+<li>$layout:    <code>&lt;layout&gt;</code></li>
+<li>$clean:    <code>&lt;boolean&gt;</code></li>
+</ul>
+<figure class="highlight plain"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">@include layout(12 1/4);</div><div class="line">// 默认情况下，这些新设置将添加到现有的全局设置中。使用$clean参数从头建立新的设置。</div></pre></td></tr></table></div></figure>
+<h3 id="With-layout-mixin"><a href="#With-layout-mixin" class="headerlink" title="With-layout [mixin]"></a>With-layout [mixin]</h3><p>可以通过此mixin设置多个栅格系统，而互相之间不冲突。</p>
+<ul>
+<li>Format:    with-layout($layout, $clean) { @content }</li>
+<li>$layout:<code>&lt;layout&gt;</code></li>
+<li>$clean:    <code>&lt;boolean&gt;</code></li>
+<li>@content:<code>Sass content block</code></li>
+</ul>
+<figure class="highlight"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">include</span> with-layout(<span class="number">8</span> static) &#123;</div><div class="line">  // Temporary 8-column static grid...</div><div class="line">&#125;</div><div class="line"></div><div class="line">// Global settings are restored...</div></pre></td></tr></table></div></figure>
+<h3 id="Susy-Get-function"><a href="#Susy-Get-function" class="headerlink" title="Susy-Get [function]"></a>Susy-Get [function]</h3><p>获取配置参数</p>
+<ul>
+<li>Format:    susy-get($key, $layout)</li>
+<li>$key:    Setting name</li>
+<li>$layout:    <code>&lt;layout&gt;</code></li>
+</ul>
+<figure class="highlight"><div class="mdui-table-fluid"><table class="mdui-table mdui-table-hoverable "><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$large: layout(80em 24 1/4 inside);</div><div class="line">$large-container: susy-get(container, $large);</div><div class="line">// debug output : 80em</div></pre></td></tr></table></div></figure>
+<p>未完，待续……</p>
+
+        </div>
+
+        
+          <div class="license mdui-typo">
+            <span>
+              Article License: 
+              
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+              
+            </span>
+            <br />
+            <span>Article Permalink: <a href="http://yoursite.com/2017/10/17/learning-susy/">http://yoursite.com/2017/10/17/learning-susy/</a></span>
+            
+              <br />
+              <span>Article Markdown: <a href="http://yoursite.com/2017/10/17/learning-susy/learning-susy.md">http://yoursite.com/2017/10/17/learning-susy/learning-susy.md</a></span>
+            
+          </div>
+        
+
+        
+        
+          
+        
+      </div>
+      
+        <div id="card-toc" class="
+        
+          mdui-color-theme
+        
+        ">
+          <ul class="mdui-list post-toc"><a class="mdui-list-item mdui-ripple post-toc-link" href="#关于Susy"><span class="post-toc-number">1.<span class="post-toc-text">关于Susy</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#栅格布局"><span class="post-toc-number">2.<span class="post-toc-text">栅格布局</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#安装与使用"><span class="post-toc-number">3.<span class="post-toc-text">安装与使用</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#小试牛刀"><span class="post-toc-number">4.<span class="post-toc-text">小试牛刀</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#专业词释义"><span class="post-toc-number">5.<span class="post-toc-text">专业词释义</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#isolate-布局"><span class="post-toc-number">5.0.1.<span class="post-toc-text">isolate 布局</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#gutter-row-container"><span class="post-toc-number">5.0.2.<span class="post-toc-text">gutter , row , container</span></span></a></a></ul></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#设置篇"><span class="post-toc-number">6.<span class="post-toc-text">设置篇</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#默认配置"><span class="post-toc-number">6.1.<span class="post-toc-text">默认配置</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Layout-function-mixin"><span class="post-toc-number">6.2.<span class="post-toc-text">Layout [function/mixin]</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#function用法"><span class="post-toc-number">6.2.1.<span class="post-toc-text">function用法</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#mixin用法"><span class="post-toc-number">6.2.2.<span class="post-toc-text">mixin用法</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#With-layout-mixin"><span class="post-toc-number">6.3.<span class="post-toc-text">With-layout [mixin]</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Susy-Get-function"><span class="post-toc-number">6.4.<span class="post-toc-text">Susy-Get [function]</span></span></a></a></ul></a></ul>
+        </div>
+      
+    </div>
+  </div>
+  <div class="post-pagination mdui-color-theme">
+  
+    <div class="flex-spacer mdui-hidden-xs"></div>
+  
+
+  
+      <div class="flex-spacer mdui-hidden-xs"></div>
+    
+</div>
+
+  
+    <button id="button-toc" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-hidden-md-up" style="z-index: 9;" mdui-menu="{target: '#menu-toc', fixed: true}">
+  <i class="mdui-icon material-icons">&#xe242;</i>
+</button>
+<ul class="mdui-menu mdui-typo no-margin-bottom auto-width" id="menu-toc" style="padding: 8px;max-height: 80%">
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于Susy"><span class="toc-number">1.</span> <span class="toc-text">关于Susy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#栅格布局"><span class="toc-number">2.</span> <span class="toc-text">栅格布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装与使用"><span class="toc-number">3.</span> <span class="toc-text">安装与使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小试牛刀"><span class="toc-number">4.</span> <span class="toc-text">小试牛刀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#专业词释义"><span class="toc-number">5.</span> <span class="toc-text">专业词释义</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#isolate-布局"><span class="toc-number">5.0.1.</span> <span class="toc-text">isolate 布局</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gutter-row-container"><span class="toc-number">5.0.2.</span> <span class="toc-text">gutter , row , container</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置篇"><span class="toc-number">6.</span> <span class="toc-text">设置篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#默认配置"><span class="toc-number">6.1.</span> <span class="toc-text">默认配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Layout-function-mixin"><span class="toc-number">6.2.</span> <span class="toc-text">Layout [function/mixin]</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#function用法"><span class="toc-number">6.2.1.</span> <span class="toc-text">function用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mixin用法"><span class="toc-number">6.2.2.</span> <span class="toc-text">mixin用法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-layout-mixin"><span class="toc-number">6.3.</span> <span class="toc-text">With-layout [mixin]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Susy-Get-function"><span class="toc-number">6.4.</span> <span class="toc-text">Susy-Get [function]</span></a></li></ol></li></ol>
+</ul>
+
+
+  
+
+</div>
+
+</main>
+
+<div id="outdated" style="z-index: 9999;">
+  <h6>Your browser is out-of-date!</h6>
+  <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+
+
+
+
+<!-- Import JS -->
+
+  <script>lsloader.load("outdatedbrowser_js","/js/outdatedbrowser.min.js?MmKvEvoD8lT7/fO+ebWwWA==", true)</script>
+
+
+
+    <script>lsloader.load("main_js","/js/js.min.js?7Tw9Ng5ky7PDfky4qwNovg==", true)</script>
+
+
+
+
+
+  
+    <script type="text/ls-javascript" id="global-script">
+  /* appbar button */
+  (function() {
+    var drawer = document.querySelector('#drawer')
+    var drawerBtn = document.querySelector('.drawer-button')
+
+    drawer.addEventListener('open.mdui.drawer', function (e) {
+      drawerBtn.classList.add('back')
+    })
+    drawer.addEventListener('close.mdui.drawer', function (e) {
+      drawerBtn.classList.remove('back')
+    })
+  })();
+
+  
+</script>
+
+
+  <script type="text/ls-javascript" id="appbar-script">
+  /* post appbar */
+  (function() {
+    var pageFlag = false;
+    var appbar = new mdui.Headroom('#blog-appbar');
+    appbar.disable();
+    var toolbar = document.querySelector('#blog-appbar .mdui-toolbar')
+
+    window.addEventListener('scroll', function() {
+      var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      var divTop = document.querySelector('div#top').offsetTop
+
+      var pageLocation = divTop - bodyTop;
+      if (!pageFlag && pageLocation < 0) {
+        toolbar.classList.add('mdui-shadow-2')
+        appbar.enable();
+        pageFlag = true;
+      } else if (pageFlag && pageLocation >= 0) {
+        toolbar.classList.remove('mdui-shadow-2')
+        appbar.disable();
+        pageFlag = false;
+      }
+    })
+  })();
+</script>
+
+  <script type="text/ls-javascript" id="toc-active-script">
+  if (document.querySelector('ul#menu-toc > ol') !== null && document.querySelector('div#card-toc > ul') !== null) {
+    window.addEventListener("load", function() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
+      }
+
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('#card-toc');
+      var links = document.querySelectorAll("a.post-toc-link");
+      var toclist = document.querySelector("#card-toc > ul");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+    });
+  }
+</script>
+
+  <script type="text/ls-javascript" id="post-lg-script">
+  var images = document.querySelectorAll('#post-content img')
+  for (i = 0; i < images.length; i++) {
+    images[i].addEventListener("click", openLG);
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>Janking</span> • Public<div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+  <!-- content warning -->
+<script type="text/ls-javascript" id="content-warning-script">
+  (function() {
+    var postLastModifiedDate = 1508207310000
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('div.warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <script>lsloader.load("lightgallery_js","/js/lightgallery.min.js?tQptxVaCRzQ3zx70gMUYig==", true)</script>
+
+
+
+
+
+
+
+
+<!-- Custom javascript -->
+
+
+<!-- remove diplay:none -->
+<script type="text/ls-javascript" id="html-script">
+  if (document.readyState === 'complete' || document.readyState !== 'loading') {
+    showHTML();
+  } else {
+    document.addEventListener('DOMContentLoaded', showHTML);
+  }
+  function showHTML(){
+    document.querySelector('html').style.display = 'block';
+  }
+</script>
+
+<script>
+  (function(){
+    var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+    for (var i = 0; i < scriptList.length; ++i) {
+      var item = scriptList[i];
+      lsloader.runInlineScript(item.id,item.id);
+    }
+  })()
+  /*! Copyright 2017 Halyul */
+  console.info("%cCopyright © 2017 Halyul\n"+'Theme Version: 1.5.1'+'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+</script>
+
+</body>
+
+</html>

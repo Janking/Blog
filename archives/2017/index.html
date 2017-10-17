@@ -1,166 +1,521 @@
+
 <!DOCTYPE html>
-<html>
+<html  style="display: none;">
+
+  
 <head>
-  <meta charset="utf-8">
+  <script>
+    window.mduiVersion = "1.5.1"
+    window.oldVersion = [
+     '1.5.0',
+     '1.4.8',
+     '1.4.9',
+     'unknownVersion'
+    ]
+  </script>
+  <!--
+        © HEXO MDUI Theme
+        https://github.com/Halyul/hexo-theme-mdui
+        Version: 1.5.1 -->
+  <meta charset="UTF-8">
+  <title>2017 - Hexo</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+  <link rel="icon" sizes="192x192" href="/img/favicon.png">
+  <link rel="apple-touch-icon" href="/img/favicon.png">
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   
-  <title>Archives: 2017 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+    <meta name="theme-color" content="
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+  #3F51B5
   
 
+">
+  
+
+  <meta name="author" content="Janking">
+  
+  <meta name="keywords" content="blog, hexo, mdui">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="Hexo">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="http://yoursite.com">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="2017 - Hexo | Hexo">
+  <meta property="og:image" content="/img/favicon.png" />
+  
+
+    
+
+  <!-- Cache -->
+  <meta http-equiv="Cache-Control" content="max-age=7200" />
+  <meta http-equiv="Expires" content="Fri, 29 Dec 2017 23:00:00 GMT" />
+
+  
+
+  <script>
+    (function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.mduiVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf(c)!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();
+  </script>
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/fonts.min.css">
+  
+  
+    
+      <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style-now.min.css?Q3IlX8SDWal9tefi13UmFw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    
+  
+
+  <!-- Custom Head -->
+  
+
+  
+    <style>
+      body {
+        background-color: #eeeeee;
+      }
+    </style>
+  
+
+  
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+
+
+
+  
+    
+  <body class="mdui-theme-primary-indigo mdui-theme-accent-blue
+   
+  
+    mdui-appbar-with-toolbar
+  
+  
+    side-content style-fix
+  " onresize="styleChanging()">
+
+
+  
+
+
+<div id="top"></div>
+
+
+  
+
+    <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed" id="blog-appbar">
+      <div class="mdui-toolbar mdui-color-theme mdui-shadow-2">
+        <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
+          <i class="mdui-icon">
+            <span></span>
+          </i>
+        </button>
         
-          <a class="main-nav-link" href="/">Home</a>
+          <a href="/" class="mdui-typo-headline">
+            Title
+          </a>
+          <span class="appbar-border-line mdui-hidden-xs"></span>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
         
-      </nav>
-      <nav id="sub-nav">
+          <span class="mdui-typo-title mdui-hidden-xs"
+            
+              onclick="smoothScroll.animateScroll( 0 );"
+            
+          >
+            2017
+          </span>
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        
+          <div class="flex-spacer"></div>
+        
+        
+        
+
       </div>
     </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
   
+
+
+
+
+
+
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
+  <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close
+  
+    drawer-fix
+  " id="drawer" style="z-index: 2001;">
+  <div class="userview" style="background-image: url(/img/bg.png)">
+  <div class="overlay">
+    <img class="mdui-img-circle avatar" src="/img/avatar.jpg"/>
+    <div class="bottom">
+      <div class="info">
+        <div class="author mdui-text-color-white-text">
+          Janking
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/10/17/hello-world/" class="archive-article-date">
-  <time datetime="2017-10-17T02:02:14.000Z" itemprop="datePublished">Oct 17</time>
-</a>
+        <div class="slogan mdui-text-color-white-secondary">
+          其疾如风，其徐如林，侵掠如火，不动如山。
+        </div>
+      </div>
+      <div class="flex-spacer"></div>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
     </div>
   </div>
+</div>
 
-
-  
+  <div class="content">
+  <div class="hexo">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/10/17/hello-world/">Hello World</a>
+      <div class="mdui-list no-padding-bottom">
+        <a href="/">
+          <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+            <div class="mdui-list-item-content">
+              Index
+            </div>
           </li>
+        </a>
+      </div>
+    
+    
+      <div class="mdui-list no-padding">
+        <a href="/archives">
+          <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+            <div class="mdui-list-item-content">
+              Archives
+              <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+            </div>
+          </li>
+        </a>
+      </div>
+    
+    
+      <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
         
-      </ul>
-    </div>
+        
+        <div class="mdui-collapse-item mdui-collapse-item-open">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+            <div class="mdui-list-item-content">Years</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+            
+              <a href="/archives/2017/" class="mdui-list-item mdui-ripple">
+                2017
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    
   </div>
+  
+</div>
+
+  <div class="flex-spacer"></div>
+  <div class="drawer-footer">
+  <div class="mdui-typo mdui-typo-caption-opacity">
+    Powered by <a href="http://hexo.io">Hexo</a>
+    <br />
+    Theme - <a href="//github.com/Halyul/hexo-theme-mdui">Halyul/MDUI</a>
+    <br />
+    <span>
+      Copyright ©
+      <span year></span>
+      Janking
+    </span>
+    
+    
+      <br />
+      <span>
+        Last updated: Oct 17, 2017
+      </span>
+    
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var copyrightNow = new Date().getFullYear();
+  var textContent = document.querySelector('span[year]')
+  
+    textContent.textContent = copyrightNow
+  
+</script>
+
+</div>
+
+
+
+
+
 
   
-</aside>
+
+  <style id="side_content_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("side_content_css","/css/src/now/side_content.min.css?6QUsjVbcFbaNw1GxvnmHrA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+<div id="side-content" class="mdui-color-teal animate-drawer">
+  <div class="mdui-grid-tile" style="overflow: visible;">
+    <div class="bg">
+      <img src="/img/random/picHD_19.png" />
+    </div>
+    <div class="mdui-grid-tile-actions mdui-grid-tile-actions-top mdui-grid-tile-actions-gradient">
+      <div class="flex-spacer"></div>
+      <div class="mdui-grid-tile-buttons">
+        
+
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <img class="mdui-img-circle avatar" src="/img/avatar.jpg"/>
+    <div class="author mdui-text-center">
+      Janking
+    </div>
+    <div class="name">
+      2017
+    </div>
+    <div class="length">
+      
+      1Post
+    </div>
+  </div>
+</div>
+<div id="contentLocation"></div>
+
+
+
+<main>
+  
+  <div class="posts-container column-3">
+
+  </div>
+  <div id="content-list" class="animate-post">
+    
+      <div class="content-item">
+        
+  
+<div class="mdui-card card-bottom-fix mdui-hoverable">
+  <div class="mdui-card-header posts-header">
+    <img class="mdui-card-header-avatar" src="/img/avatar.jpg"/>
+    <div class="content mdui-valign">
+      <div class="mdui-typo-body-1-opacity mdui-typo">
+        <span>Janking</span>
+        <span> · </span>
+        <span>Oct 17, 2017</span>
+      </div>
+    </div>
+  <div class="flex-spacer"></div>
+    <a href="/2017/10/17/learning-susy/" target="_self" class="mdui-btn mdui-btn-icon mdui-ripple btn-dense"><i class="mdui-icon material-icons">&#xe89e;</i></a>
+  </div>
+  <div class="mdui-card-content posts-content">
+    <div class="posts-excerpt">
+      <a href="/2017/10/17/learning-susy/" target="_self" class="posts-title mdui-typo-title no-text-decoration">
+        
+        Susy 2 教程 — 入门篇
+      </a>
+      <div class="posts-strip mdui-typo-body-1">
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+    <div class="flex-spacer"></div>
     
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
+      <div class="posts-thumbnail" style="background-image: url(/img/random/picHD_36.png)"></div>
+    
   </div>
+  
+</div>
+
+
+
+      </div>
+    
+  </div>
+  
+
+
+<button id="toTop" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-fab-hide" style="z-index: 9;" onclick="smoothScroll.animateScroll( 0 );">
+  <i class="mdui-icon material-icons">&#xe5d8;</i>
+</button>
+
+
+</main>
+
+<div id="outdated" style="z-index: 9999;">
+  <h6>Your browser is out-of-date!</h6>
+  <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+
+
+
+
+<!-- Import JS -->
+
+  <script>lsloader.load("outdatedbrowser_js","/js/outdatedbrowser.min.js?MmKvEvoD8lT7/fO+ebWwWA==", true)</script>
+
+
+
+    <script>lsloader.load("main_js","/js/js.min.js?7Tw9Ng5ky7PDfky4qwNovg==", true)</script>
+
+
+
+
+
+  
+    <script type="text/ls-javascript" id="global-script">
+  /* appbar button */
+  (function() {
+    var drawer = document.querySelector('#drawer')
+    var drawerBtn = document.querySelector('.drawer-button')
+
+    drawer.addEventListener('open.mdui.drawer', function (e) {
+      drawerBtn.classList.add('back')
+    })
+    drawer.addEventListener('close.mdui.drawer', function (e) {
+      drawerBtn.classList.remove('back')
+    })
+  })();
+
+  
+</script>
+
+
+
+
+  <script>
+    window.addEventListener("scroll", function(){
+       document.querySelector('#archives .bg .mdui-img-fluid.mdui-img-rounded')
+        .style.transform = 'translateY(' + document.body.scrollTop * 0.4 + 'px)';
+    })
+  </script>
+
+
+
+
+
+
+
+  <script type="text/ls-javascript" id="style-changing-script">
+  var content_flag = false;
+  var appbar = document.querySelector('div#blog-appbar')
+  var body = document.querySelector('body')
+
+  window.addEventListener('scroll', function() {
+    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+    var divTop = document.querySelector('div#contentLocation').offsetTop
+    var contentLocation = divTop - scrollTop - 56;
+
+    if (!content_flag && contentLocation < 0 && window.innerWidth < 860) {
+      appbar.classList.add('style-fix');
+      body.classList.remove('style-fix');
+      content_flag = true;
+    } else if (content_flag && contentLocation >= 0 && window.innerWidth < 860) {
+      appbar.classList.remove('style-fix');
+      body.classList.add('style-fix');
+      content_flag = false;
+    };
+  })
+
+  function styleChanging() {
+    var hide = new mdui.Headroom('div#blog-appbar');
+    var windowWidth = window.innerWidth,
+      toLeftWidth = 860;
+    if (windowWidth < toLeftWidth) {
+      hide.enable();
+    } else {
+      hide.disable();
+    }
+  };
+  styleChanging();
+</script>
+
+
+
+
+
+
+  <script type="text/ls-javascript" id="to-top-script">
+  /* fab */
+  (function() {
+    var pageFlag = false;
+    var fab = new mdui.Fab('#toTop');
+    fab.hide();
+    window.addEventListener('scroll', function() {
+      var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      var divTop = document.querySelector('div#top').offsetTop
+      var pageLocation = divTop - bodyTop;
+      if (!pageFlag && pageLocation < 0) {
+        fab.show();
+        pageFlag = true;
+      } else if (pageFlag && pageLocation >= 0) {
+        fab.hide();
+        pageFlag = false;
+      }
+    });
+  })();
+</script>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<!-- Custom javascript -->
+
+
+<!-- remove diplay:none -->
+<script type="text/ls-javascript" id="html-script">
+  if (document.readyState === 'complete' || document.readyState !== 'loading') {
+    showHTML();
+  } else {
+    document.addEventListener('DOMContentLoaded', showHTML);
+  }
+  function showHTML(){
+    document.querySelector('html').style.display = 'block';
+  }
+</script>
+
+<script>
+  (function(){
+    var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+    for (var i = 0; i < scriptList.length; ++i) {
+      var item = scriptList[i];
+      lsloader.runInlineScript(item.id,item.id);
+    }
+  })()
+  /*! Copyright 2017 Halyul */
+  console.info("%cCopyright © 2017 Halyul\n"+'Theme Version: 1.5.1'+'%c\nhttps://github.com/Halyul/hexo-theme-mdui',"font-size: 14px;color: #3F51B5;","color: #448AFF;text-decoration: none");
+</script>
+
 </body>
+
 </html>
